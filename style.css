@@ -18,7 +18,7 @@
 	height: 40px;
 	position: absolute;
 	cursor: pointer;
-	left: 3.7%;
+	left: 2.5%;
 	top: 35%;
 }
 
@@ -34,11 +34,11 @@
 }
 
 #header .input-group {
-	width: 580px;
+	width: 700px;
 	height: 10px;
 	position: absolute;
 	top: 25%;
-	left: 25%;
+	left: 30%;
 	border-radius: 50% 0 0 50%;
 }
 
@@ -49,7 +49,7 @@
 	height: 40px;
 	position: absolute;
 	top: 26%;
-	right: 25%;
+	right: 30%;
 	border: 1px solid;
 	border-radius: 50%;
 	justify-content: center;
@@ -68,7 +68,7 @@
 	position: absolute;
 	background-color: white;
 	top: 28%;
-	right: 10%;
+	right: 0%;
 
 	border-radius: 50%;
 
