@@ -2,66 +2,589 @@
 <html lang="zh-Hant-TW">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>侯恁暄youtube切版練習</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>侯恁暄youtube切版練習</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
 
-  <div id="header">
-    <div class="bars"><i class="fa-solid fa-bars"></i></div>
 
-    <div class="logo">
-      <a href="#header"><img src="./images/images.png" alt="logo" /></a>
+    <div id="header">
+        <div class="bars"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="logo">
+            <a href="#header"><img src="./images/images.png" alt="logo" /></a>
+        </div>
+
+
+        <label for="site-search"></label>
+        <input placeholder="搜尋" type="search" id="search" name="q" />
+        <button id="btnsearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
+
+        <div class="microphone">
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+
+        <div class="set"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+
+        <div class="user">
+            <div class="front"></div>
+            <div class="middle"><i class="fa-regular fa-user login"></i>登入</div>
+            <div class="back"></div>
+        </div>
+
+    </div>
     </div>
 
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="搜尋" aria-label="Recipient's username"
-        aria-describedby="button-addon2" />
-      <button class="searchBtn btn btn-outline-secondary" type="button" id="button-addon2">
-        <i class="searchIcon fa-solid fa-magnifying-glass"></i>
-      </button>
+    <!-- 左側邊 -->
+    <div id="sidebar">
+        <div class="homepage"><i class="fa-solid fa-house"></i>首頁</div>
+        <div class="shorts"><i class="fa-regular fa-circle-play"></i>Shorts</div>
+        <div class="subscription"><i class="fa-solid fa-clipboard-list"></i>訂閱內容
+
+        </div>
+
+
+
+        <div class="media"><i class="fa-solid fa-display"></i>媒體庫</div>
+        <div class="history"><i class="fa-solid fa-clock-rotate-left"></i>觀看紀錄
+
+        </div>
+
+        <div class="log">
+            <hr>
+            <p>登入帳戶即可對影片表示喜
+                <br>
+                歡、發布留言及訂閱頻道。
+            </p>
+            <div class="middle2"><i class="fa-regular fa-user login"></i>登入</div>
+            <hr>
+        </div>
+
+        <div class="view">
+            <p>探索</p>
+        </div>
+
+
+        <div class="hot"><i class="fa-solid fa-fire"></i>發燒影片</div>
+        <div class="music"><i class="fa-solid fa-music"></i>音樂</div>
+        <div class="movie"><i class="fa-solid fa-film"></i>電影</div>
+        <div class="live"><i class="fa-solid fa-podcast"></i>直播</div>
+        <div class="game"><i class="fa-solid fa-gamepad"></i>遊戲</div>
+        <div class="news"><i class="fa-regular fa-newspaper"></i>新聞</div>
+        <div class="sport"><i class="fa-solid fa-trophy"></i>運動</div>
+        <div class="set"><i class="fa-solid fa-gear"></i>設定</div>
+        <div class="bad"><i class="fa-regular fa-flag"></i>檢舉</div>
+        <div class="ask"><i class="fa-regular fa-circle-question"></i>說明</div>
+        <div class="plan"><i class="fa-solid fa-exclamation"></i>提供意見</div>
+
+
+
+        <div class="hot"><i class="fa-solid fa-fire"></i>發燒影片</div>
+
     </div>
-    <div class="microphone">
-      <i class="fa-solid fa-microphone"></i>
+
+
+
+
+
+
+    <div id="content">
+
+        <div class="headbar">
+            <div class="full">全部</div>
+            <div>遊戲</div>
+            <div>直播中</div>
+            <div>音樂</div>
+            <div>新聞</div>
+            <div>烹飪節目</div>
+            <div>棒球</div>
+            <div>觀光</div>
+            <div>烹飪</div>
+            <div>最新上傳</div>
+        </div>
+
+
+
+
+        <div class="card">
+            <img src="./images/01.jpg" alt="01">
+
+            <div class="info">
+                <div class="username"><img src="./images/01man.jpeg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你... ,
+                    </h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/02.jpg" alt="02">
+            <div class="info">
+                <div class="username"><img src="./images/user/user01.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6>
+                        【好味小姐】養貓最可怕的事！被我意外拍到了！｜好
+
+
+                        ...</h6>
+                    <p> 好味小姐Lady Flavor
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/03.webp" alt="03">
+
+            <div class="info">
+                <div class="username"><img src="./images/user/user02.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 未來科技探索：2023年最新科技突破，改變我們的生..</h6>
+                    <p>Tech Innovations 2023
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="./images/05.webp" alt="04">
+            <div class="info">
+                <div class="username"><img src="./images/user/user03.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 【中華隊滑輪溜冰】這就是對勝利的渴望！男子接力隊不
+
+                        ...</h6>
+                    <p> 愛爾達體育家族 ELTA Sports
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/04.webp" alt="05">
+            <div class="info">
+                <div class="username"><img src="./images/user/user04.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6>美味烹飪秀：獨家食譜和廚藝技巧，讓你成為廚房大廚！</h6>
+                    <p>Culinary Delights
+                        <br>
+                        觀看次數：23萬次·9 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/06.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user05.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 健身達人秀：2023年最新健身趨勢和鍛煉教程，塑造健康身材！</h6>
+                    <p>Fitness Fanatics 2023
+                        <br>
+                        觀看次數：23萬次·9 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/07.webp" alt="07">
+            <div class="info">
+                <div class="username"><img src="./images/user/user06.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 旅遊世界：探索最令人驚嘆的目的地和冒險旅程！
+                        ...</h6>
+                    <p>World Travel Adventures
+                        <br>
+                        觀看次數：23萬次·9 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/08.webp" alt="08">
+            <div class="info">
+                <div class="username"><img src="./images/user/user07.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 畫家的天堂：藝術創作和技巧，讓你成為畫家大師！ ,
+                    </h6>
+                    <p>
+                        Artistic Creations 2023
+                        <br>
+                        觀看次數：23萬次·9 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/09.webp" alt="09">
+            <div class="info">
+                <div class="username"><img src="./images/user/user08.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 影評世界：最新電影評論、經典影片解析，不容錯過的電影情報</h6>
+                    <p>Movie Buffs
+                        <br>
+                        觀看次數：23萬次·9 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/10.webp" alt="10">
+            <div class="info">
+                <div class="username"><img src="./images/user/user09.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Movie Buffs
+                        <br>
+                        觀看次數：23萬次·9 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/11.webp" alt="11">
+            <div class="info">
+                <div class="username"><img src="./images/user/user10.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p> 好味小姐Lady Flavor
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/12.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user11.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p> 好味小姐Lady Flavor
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/13.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user12.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p> 好味小姐Lady Flavor
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/14.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user13.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p> 好味小姐Lady Flavor
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/15.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user14.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p> 好味小姐Lady Flavor
+                        <br>
+                        觀看次數：23萬次·2 小時前
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/16.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user15.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/17.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user16.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/18.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user17.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/19.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user18.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/20.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user19.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/21.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user20.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/22.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user21.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src=".//images/23.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user22.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/24.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user23.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src=".//images/25.webp" alt="06">
+            <div class="info">
+                <div class="username"><img src="./images/user/user24.jpg" alt="01man"></div>
+
+                <div class="intro">
+                    <h6> 2023流行歌曲【50首特選最佳抒情歌 】我好喜歡你，A-Lin - 摯友 ,
+                        ...</h6>
+                    <p>Douyin song 2023
+                        288 人正在觀看</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
-    <div class="set"><i class="fa-solid fa-ellipsis-vertical"></i></div>
 
 
-    <div class="user">
-      <div class="front"></div>
-      <div class="middle"><i class="fa-regular fa-user login"></i>登入</div>
-      <div class="back"></div>
-    </div>
-
-  </div>
-  </div>
-
-  <!-- 左側邊 -->
-  <div id="sidebar">
-    <div class="homepage"><i class="fa-solid fa-house"></i><br>首頁</div>
-    <div class="shorts"><i class="fa-regular fa-circle-play"></i><br>Shorts</div>
-    <div class="subscription"><i class="fa-solid fa-clipboard-list"></i><br>訂閱內容</div>
-    <div class="media"><i class="fa-solid fa-display"></i><br>媒體庫</div>
-    <div class="history"><i class="fa-solid fa-clock-rotate-left"></i><br>觀看紀錄</div>
-
-  </div>
 
 
-  <div id="content">
 
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
